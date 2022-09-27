@@ -1,9 +1,13 @@
 /********** Template CSS **********/
 :root {
-    --primary: #20e2e2;
+    --primary: #11dddd;
     --secondary: #FF6922;
-    --light: #EFFDF5;
+    --light: #effdfd;
     --dark: #0a2746;
+}
+
+.bg-color{
+    background-color: var(--primary);
 }
 
 .back-to-top {
@@ -253,6 +257,7 @@ body{
 /*** Property List ***/
 .nav-pills .nav-item .btn {
     color: var(--dark);
+    background-color: var(--primary);
 }
 
 .nav-pills .nav-item .btn:hover,
