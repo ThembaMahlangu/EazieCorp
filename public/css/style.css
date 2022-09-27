@@ -23,7 +23,9 @@ body{
     transition: .5s;
 }
 
-.btn.btn-primary,
+.btn.btn-primary {
+    background-color: rgba(13, 186, 238, 0.3);
+}
 .btn.btn-secondary {
     color: #FFFFFF;
 }
@@ -53,7 +55,9 @@ body{
     font-weight: normal;
     border-radius: 50px;
 }
-
+.h6 {
+    color: rgba(13, 186, 238, 0.3);
+}
 
 /*** Navbar ***/
 .nav-bar {
