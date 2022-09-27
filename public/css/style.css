@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #00B98E;
+    --primary: #20e22a;
     --secondary: #FF6922;
     --light: #EFFDF5;
-    --dark: #0E2E50;
+    --dark: #0a2746;
 }
 
 .back-to-top {
@@ -228,7 +228,7 @@ body{
 /*** Category ***/
 .cat-item div {
     background: #FFFFFF;
-    border: 1px dashed rgba(0, 185, 142, .3);
+    border: 1px dashed rgba(82, 133, 190, 0.3);
     transition: .5s;
 }
 
@@ -269,11 +269,11 @@ body{
 }
 
 .property-item .border-top {
-    border-top: 1px dashed rgba(0, 185, 142, .3) !important;
+    border-top: 1px dashed rgba(82, 133, 190, 0.3) !important;
 }
 
 .property-item .border-end {
-    border-right: 1px dashed rgba(0, 185, 142, .3) !important;
+    border-right: 1px dashed rgba(82, 133, 190, 0.3) !important;
 }
 
 
@@ -321,7 +321,7 @@ body{
 }
 
 .testimonial-carousel .testimonial-item .border {
-    border: 1px dashed rgba(0, 185, 142, .3) !important;
+    border: 1px dashed rgba(13, 186, 238, 0.3) !important;
 }
 
 .testimonial-carousel .owl-nav {
