@@ -433,3 +433,6 @@ body{
     padding-right: 0;
     border-right: none;
 }
+.login button {
+    background-color: rgba(13, 186, 238, 0.3);
+}
