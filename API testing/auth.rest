@@ -1,0 +1,35 @@
+GET http://localhost:3000/auth
+
+###
+
+GET http://localhost:3000/auth/log_in
+
+
+###
+
+GET http://localhost:3000/auth/register
+
+//post requests
+
+###
+POST http://localhost:3000/auth/log_in
+Content-Type: application/json
+
+{
+
+    "email": "hello@website.co.za",
+    "password": "my_PROPERTY_22"
+
+}
+###
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+
+    "name": "Another Property",
+    "email": "hello@website.co.za",
+    "password": "my_PROPERTY_22"
+
+}

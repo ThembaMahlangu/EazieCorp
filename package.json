@@ -1,18 +1,31 @@
 {
-  "name": "server",
+  "name": "eaziecorp",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "<-- In this project we work on addressing the fuss of moving to a new city especially when you've never been to that city --> <-- This is done through the intergration of this website with properties... Much of the info is confidential -->",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "npx nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThembaMahlangu/EazieCorp.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThembaMahlangu/EazieCorp/issues"
+  },
+  "homepage": "https://github.com/ThembaMahlangu/EazieCorp#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "nodemon": "^2.0.20"
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "uuid": "^9.0.0"
   }
 }
