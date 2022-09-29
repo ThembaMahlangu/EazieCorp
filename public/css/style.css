@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #11dddd;
+    --primary: #4d84e2;
     --secondary: #FF6922;
     --light: #effdfd;
     --dark: #0a2746;
@@ -28,7 +28,7 @@ body{
 }
 
 .btn.btn-primary {
-    background-color: rgba(13, 186, 238, 0.3);
+    background-color: #4d84e2;
 }
 .btn.btn-secondary {
     color: #FFFFFF;
@@ -60,7 +60,7 @@ body{
     border-radius: 50px;
 }
 .h6 {
-    color: rgba(13, 186, 238, 0.3);
+    color: #4d84e2;
 }
 
 /*** Navbar ***/
@@ -236,7 +236,7 @@ body{
 /*** Category ***/
 .cat-item div {
     background: #FFFFFF;
-    border: 1px dashed rgba(82, 133, 190, 0.3);
+    border: 1px dashed #4d84e2;
     transition: .5s;
 }
 
@@ -278,11 +278,11 @@ body{
 }
 
 .property-item .border-top {
-    border-top: 1px dashed rgba(82, 133, 190, 0.3) !important;
+    border-top: 1px dashed #4d84e2 !important;
 }
 
 .property-item .border-end {
-    border-right: 1px dashed rgba(82, 133, 190, 0.3) !important;
+    border-right: 1px dashed #4d84e2 !important;
 }
 
 
@@ -330,7 +330,7 @@ body{
 }
 
 .testimonial-carousel .testimonial-item .border {
-    border: 1px dashed rgba(13, 186, 238, 0.3) !important;
+    border: 1px dashed #4d84e2 !important;
 }
 
 .testimonial-carousel .owl-nav {
