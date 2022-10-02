@@ -1,19 +1,30 @@
-import express, { json } from 'express';
-import usersRoutes from './routers/users.js';
-import authRoutes from './routers/auth.js';
+// imports start
+const express = require('express')
+const path = require('path');
+const dotenv = require('dotenv').config();
+const mongoose = require('mongoose');
+const session =  require('express-session');
+const connectDB = require('./config/mongodb.js')
+const bodyParser = require('body-parser');
+// impoorts End
+
+//PORT number
+const PORT = process.env.PORT || 3000;
+
+// express app.use
+
 const app = express();
-
-app.set('view-engine', 'ejs');
+//connectDB();
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public"));
+//Routes
 
-app.get('/', function (req, res) {
-  res.send('Hello World!s!!')
-})
-
-app.use('/users', usersRoutes);
-app.use('/auth', authRoutes);
+app.use("/", require('./routers/home'));
+app.use("/admin", require('./routers/admin'));
+app.use("/login", require('./routers/login'));
 
 
-const port = process.env.PORT || 3000;
-app.listen(port, ()=> console.log(`Port : ${port}`))
+// end routes
+
+app.listen(PORT, console.log(`Server running on ${PORT}`));
