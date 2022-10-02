@@ -1,9 +1,0 @@
-GET http://localhost:8000
-
-###
-
-GET http://localhost:3000/admin
-
-###
-
-POST http://localhost:3000/admin

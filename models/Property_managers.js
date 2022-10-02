@@ -1,8 +1,7 @@
 const mongoose = require('mongoose')
 
 const properties = mongoose.Schema(
-    { text: String },
-    {timestamps: true}
+    { text: String }
 )
 
 module.exports = mongoose.model('properties', properties)
