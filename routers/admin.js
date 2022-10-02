@@ -11,4 +11,5 @@ router.get('/activities', function (req, res) {
     res.render('activities.ejs');
   });
 
+  
 module.exports = router;
