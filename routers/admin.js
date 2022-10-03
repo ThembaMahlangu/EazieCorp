@@ -12,8 +12,11 @@ router.get('/activities', function (req, res) {
   });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 =======
+=======
+>>>>>>> frontend
 router.get('/departments', function (req, res) {
     res.render('departments.ejs');
   });
@@ -410,5 +413,8 @@ router.get('/activities', function (req, res) {
     res.render('activities.ejs');
   });
 
+<<<<<<< HEAD
+>>>>>>> frontend
+=======
 >>>>>>> frontend
 module.exports = router;
