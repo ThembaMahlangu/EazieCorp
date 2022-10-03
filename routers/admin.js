@@ -10,7 +10,6 @@ router.get('/', function (req, res) {
 router.get('/activities', function (req, res) {
     res.render('activities.ejs');
   });
-
 router.get('/departments', function (req, res) {
     res.render('departments.ejs');
   });
@@ -406,5 +405,4 @@ router.get('/admin-dashboard', function (req, res) {
 router.get('/activities', function (req, res) {
     res.render('activities.ejs');
   });
-
 module.exports = router;

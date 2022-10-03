@@ -14,16 +14,17 @@ const PORT = process.env.PORT || 3000;
 // express app.use
 
 const app = express();
-//connectDB();
+connectDB();
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
+
 //Routes
 
 app.use("/", require('./routers/home'));
 app.use("/admin", require('./routers/admin'));
 app.use("/login", require('./routers/login'));
-
+// app.use("/property_listing", require('./routers/property_listing'));
 
 // end routes
 
