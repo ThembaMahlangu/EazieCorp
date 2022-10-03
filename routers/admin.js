@@ -11,7 +11,6 @@ router.get('/activities', function (req, res) {
     res.render('activities.ejs');
   });
 
-<<<<<<< HEAD
 router.get('/departments', function (req, res) {
     res.render('departments.ejs');
   });
@@ -408,7 +407,4 @@ router.get('/activities', function (req, res) {
     res.render('activities.ejs');
   });
 
-=======
-  
->>>>>>> ec5b9ab1884c33580c67865af605f85d9190a494
 module.exports = router;
