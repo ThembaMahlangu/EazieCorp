@@ -1,7 +1,9 @@
 const mongoose = require('mongoose')
 
-const properties = mongoose.Schema(
-    { text: String }
+
+const properties_managers = new mongoose.Schema(
+    { text: {type:String, required: true} },
+    { address: {type:String, required: true} },
 )
 
-module.exports = mongoose.model('properties', properties)
+module.exports = mongoose.model('properties_managers', properties_managers)

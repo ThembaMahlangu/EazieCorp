@@ -41,7 +41,7 @@
                     <div class="icon p-2 me-2">
                         <img class="img-fluid" src="images/logos/logo.png" alt="Icon" style="width: 30px; height: 30px;">
                     </div>
-                    <h1 class="m-0 text-primary">Eazie Rentals</h1>
+                    <h1 class="m-0 text-primary">Eazie</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -142,6 +142,7 @@
                     <h1 class="mb-3">Property Types</h1>
                     <p>Choose the type of accomodation you need, we also have a business section for office rentals.</p>
                 </div>
+                <% properties.forEach(property => { %>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <a class="cat-item d-block bg-light text-center rounded p-3" href="">
@@ -149,11 +150,13 @@
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src="img/icon-apartment.png" alt="Icon">
                                 </div>
-                                <h6>Apartment</h6>
-                                <span>123 Properties</span>
+                                <h6><%= property.ComponyName %> </h6>
+                                <span><%= property.Address %></span>
                             </div>
                         </a>
                     </div>
+
+                    <% }); %> 
                 </div>
             </div>
         </div>
@@ -210,25 +213,28 @@
                 <div class="tab-content">
                     <div id="tab-1" class="tab-pane fade show p-0 active">
                         <div class="row g-4">
+                            <% listing.forEach(list => { %>
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="property-item rounded overflow-hidden">
                                     <div class="position-relative overflow-hidden">
                                         <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
-                                        <div class="bg-color rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Appartment</div>
+                                        <div class="bg-color rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"><%= list.type %></div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"><%= list.Building %></div>
                                     </div>
                                     <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">R8,850</h5>
-                                        <a class="d-block h5 mb-2" href="">Golden Urban House - Long term</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                                        <h5 class="text-primary mb-3"><%= list.price %></h5>
+                                        <a class="d-block h5 mb-2" href=""><%= list.text %></a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i><%= list.text %></p>
                                     </div>
                                     <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i><%= list.size %></small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i><%= list.bedrooms %></small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i><%= list.bath %></small>
                                     </div>
                                 </div>
                             </div>
+
+                            <% }); %> 
                             <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
                                 <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
                             </div>
