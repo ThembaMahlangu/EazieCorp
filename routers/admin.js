@@ -11,6 +11,12 @@ router.get('/activities', function (req, res) {
     res.render('activities.ejs');
   });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  
+=======
+>>>>>>> 5cdb8dc (1.0.1)
 router.get('/departments', function (req, res) {
     res.render('departments.ejs');
   });
@@ -407,4 +413,8 @@ router.get('/activities', function (req, res) {
     res.render('activities.ejs');
   });
 
+<<<<<<< HEAD
+=======
+>>>>>>> frontend
+>>>>>>> 5cdb8dc (1.0.1)
 module.exports = router;
