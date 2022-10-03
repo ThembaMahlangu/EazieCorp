@@ -238,6 +238,10 @@ form.sign-in-form {
   right: 52%;
 }
 
+.dot{
+  list-style-type: none;
+}
+
 .container.sign-up-mode .left-panel .image,
 .container.sign-up-mode .left-panel .content {
   transform: translateX(-800px);
