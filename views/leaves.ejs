@@ -894,10 +894,10 @@
 								</button>
 							</div>
 							<div class="modal-body">
-								<form>
+								<form action="leaves" method="POST">
 									<div class="form-group">
 										<label>Building Type <span class="text-danger">*</span></label>
-										<select class="select">
+										<select name="building_type" class="select">
 											<option>Select Building Type</option>
 											<option>Apartments</option>
 											<option>Estate/Real Estate</option>
@@ -907,7 +907,7 @@
 
 									<div class="form-group">
 										<label>Room Type <span class="text-danger">*</span></label>
-										<select class="select">
+										<select name ="room_type" class="select">
 											<option>Select Building Type</option>
 											<option>1 Bedroom</option>
 											<option>Bachelor</option>
@@ -917,33 +917,33 @@
 									<div class="form-group">
 										<label>Rent p/m <span class="text-danger">*</span></label>
 										<div class="">
-											<input class="form-control" type="text">
+											<input name = "Rent" class="form-control" type="text">
 										</div>
 									</div>
 									<div class="form-group">
 										<label>Rates<span class="text-danger">*</span></label>
 										<div class="">
-											<input class="form-control" type="text">
+											<input name="Rates" class="form-control" type="text">
 										</div>
 									</div>
 
 									<div class="form-group">
 										<label>Rent after rates<span class="text-danger">*</span></label>
 										<div class="">
-											<input class="form-control" type="text">
+											<input name = "Total" class="form-control" type="text">
 										</div>
 									
 									<div class="form-group">
 										<label>Adress of the Building<span class="text-danger">*</span></label>
 										<div class="">
-											<input class="form-control" type="text">
+											<input name = "building_address" class="form-control" type="text">
 										</div>
 									
 									</div>
 									<div class="form-group">
 										<label class="col-lg-12 col-form-label">Upload Images<span class="text-danger">*</span></label>
 										<div class="col-lg-12">
-											<input type="file" class="form-control">
+											<input name="file_upload" type="file" class="form-control">
 											<span class="form-text text-muted">Recommended image size is 1000px x 1080px</span>
 									</div>
 									<div class="submit-section">

@@ -232,9 +232,44 @@ router.get('/login', function (req, res) {
     res.render('login.ejs');
   });
 
+
+// ----------------------- Leaves --------------------------//
+
+
 router.get('/leaves', function (req, res) {
     res.render('leaves.ejs');
   });
+
+router.post('/leaves', async function (req, res) {
+    let new_building = new add_property({
+
+      Building_Type : req.body.building_type,
+      Room_Type: req.body.room_type,
+      Rent : req.body.Rent,
+      Rates: req.body.Rates,
+      Total_Rent : req.body.Total,
+      Building_address:req.body.building_address,
+      image_upload : req.body.file_upload
+
+    });
+
+    try{
+
+      new_building = await new_building.save();
+      res.render('leaves.ejs');
+      console.log(new_building)
+
+    } catch(e){
+      res.render('404.ejs')
+      console.log(e)
+    }
+
+  });
+
+
+
+// --------------------- end Leaves  ---------------------//
+
 
 router.get('/leave-type', function (req, res) {
     res.render('leave-type.ejs');
