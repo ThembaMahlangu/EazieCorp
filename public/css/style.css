@@ -24,8 +24,11 @@ ul{
 body{
     background-color: #fff;
 }
- 
 
+.bg-light {
+    background-color: rgba(13, 186, 238, 0.3) !important;
+  }
+  
 /*** Button ***/
 .btn {
     transition: .5s;
