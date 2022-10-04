@@ -20,7 +20,7 @@ router.get('/departments', function (req, res) {
 
 
 router.get('/employees', function (req, res) {
-    res.render('employees.ejs', {property_add});
+    res.render('employees.ejs');
   });
 
 router.post('/employees', function (req, res) {
