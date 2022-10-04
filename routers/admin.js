@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
+const add_property = require('./../models/add_property')
 router.use(express.static(path.join(__dirname, 'public')));
 
 router.get('/', function (req, res) {
@@ -14,9 +15,22 @@ router.get('/departments', function (req, res) {
     res.render('departments.ejs');
   });
 
+
+// -------------------------- Enployees Sction -----------------------------------//
+
+
 router.get('/employees', function (req, res) {
-    res.render('employees.ejs');
+    res.render('employees.ejs', {property_add});
   });
+
+router.post('/employees', function (req, res) {
+ pass
+
+  });
+
+
+// -------------------------- Enployees Sction End --------------------------------//
+
 
 router.get('/employees-list', function (req, res) {
     res.render('employees-list.ejs');
@@ -184,22 +198,6 @@ router.get('/privacy-policy', function (req, res) {
 
 router.get('/policies', function (req, res) {
     res.render('policies.ejs');
-  });
-
-router.get('/performance', function (req, res) {
-    res.render('performance.ejs');
-  });
-
-router.get('/performance-setting', function (req, res) {
-    res.render('performance-setting.ejs');
-  });
-
-router.get('/performance-indicator', function (req, res) {
-    res.render('performance-indicator.ejs');
-  });
-
-router.get('/performance-appraisal', function (req, res) {
-    res.render('performance-appraisal.ejs');
   });
 
 router.get('/payslip-reports', function (req, res) {
