@@ -257,11 +257,9 @@ router.post('/leaves', async function (req, res) {
 
       new_building = await new_building.save();
       res.render('leaves.ejs');
-      console.log(new_building)
 
     } catch(e){
       res.render('404.ejs')
-      console.log(e)
     }
 
   });

@@ -15,6 +15,6 @@ router.post('/register', function (req, res) {
   });
 
 router.post('/login', function (req, res) {
-    res.render('index.ejs');
+    res.redirect('/admin')
   });
 module.exports = router;
