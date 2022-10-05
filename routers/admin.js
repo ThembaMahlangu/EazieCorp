@@ -379,9 +379,21 @@ router.get('/client-profile', function (req, res) {
     res.render('client-profile.ejs');
   });
 
+
+//-------- Chat Box ------//
+
+
 router.get('/chat', function (req, res) {
     res.render('chat.ejs');
   });
+
+router.post('/chat', function (req, res) {
+    console.log(req.body.input)
+  });
+
+
+// ----------- Chat Box end ----------//
+
 
 router.get('/change-password', function (req, res) {
     res.render('change-password.ejs');
