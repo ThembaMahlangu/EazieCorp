@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
-const register_user = require('./../models/registration')
+const add_user = require('./../models/registration')
 const connectDB = require('../config/mongodb.js')
 
 
@@ -11,12 +11,8 @@ router.get('/', function (req, res) {
     res.render('login.ejs');
   })
 
-router.post('/register', function (req, res) {
-    res.render('index.ejs');
-  });
-
 router.post('/register', async (req, res) => {
-      let new_user = new register_user({
+      let new_user = new add_user({
         Username : req.body.username_signup,
         email: req.body.email_signup,
         password : req.body.password_signup
@@ -24,8 +20,8 @@ router.post('/register', async (req, res) => {
 
       try {
         new_user = await new_user.save();
-        res.render('leaves.ejs');
         console.log(new_user)
+        res.render('leaves.ejs');
 
       } catch (e) {
         res.render('404.ejs');
