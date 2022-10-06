@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
-const users = mongoose.Schema(
+const users = mongoose.userSchema(
 
 )
 
-module.exports = mongoose.model('properties', properties)
+module.exports = mongoose.model('users', userSchema)

@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const testimonials = require('./../models/testimonials')
 const router = express.Router();
 router.use(express.static(path.join(__dirname, 'public')));
 
@@ -40,8 +41,14 @@ router.get('/', function (req, res) {
   }
   ];
 
+  let new_testimonial = new testimonials({
 
-    res.render('index.ejs', {properties: properties, listing: listing});
+    name : User_name,
+    occupation: User_occupstion,
+    input : User_input
+
+  })
+    res.render('index.ejs', {properties: properties, listing: listing, new_testimonial : new_testimonial});
   });
 
   router.get('/property-list-section', function (req, res) {
