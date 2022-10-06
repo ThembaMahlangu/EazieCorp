@@ -9,7 +9,6 @@ const add_buildingSchema = new mongoose.Schema(
         Rates: {type: Number},
         Total_Rent : {type: Number},
         Building_address: {type:String},
-        image_upload : {type:String},}
-)
+        image_upload : {type:String},})
 
 module.exports = mongoose.model('add_building', add_buildingSchema)
