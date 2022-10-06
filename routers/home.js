@@ -43,9 +43,9 @@ router.get('/', function (req, res) {
 
   let new_testimonial = new testimonials({
 
-    name : User_name,
-    occupation: User_occupstion,
-    input : User_input
+    name : 'User_name',
+    occupation: 'User_occupstion',
+    input : 'User_input'
 
   })
     res.render('index.ejs', {properties: properties, listing: listing, new_testimonial : new_testimonial});
