@@ -10,19 +10,21 @@ router.use(express.static(path.join(__dirname, 'public')));
 router.get('/', function (req, res) {
     res.render('login.ejs');
   })
-run()
-async function run(){
 
-      let new_user = await add_user.create({
+router.post('/register', async (req, res) =>{
 
-        name : 'sakhile',
-        email: 'nelsonsakhile@gmail.com',
-        password: 'password'
+  let new_user = await add_user.create({
 
-      });
-      console.log(new_user);
-      
-    };
+    name : 'sakhile',
+    email: 'nelsonsakhile@gmail.com', 
+    password: 'password'
+
+  });
+  console.log(new_user);
+  
+});
+
+
 
 router.post('/login', function (req, res) {
     res.redirect('/admin')
