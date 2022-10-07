@@ -15,12 +15,13 @@ router.post('/register', async (req, res) =>{
 
   let new_user = await add_user.create({
 
-    name : 'sakhile',
-    email: 'nelsonsakhile@gmail.com', 
-    password: 'password'
+    name : req.body.username_signup,
+    email: req.body.email_sign, 
+    password: req.body.password_signup
 
   });
   console.log(new_user);
+
   
 });
 
