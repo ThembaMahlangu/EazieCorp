@@ -3,7 +3,9 @@ const mongoose = require('mongoose')
 
 
 const add_buildingSchema = new mongoose.Schema(
-    {   Building_Type : {type:String},
+    
+    { 
+        Building_Type : {type:String},
         Room_Type: {type:String},
         Rent : {type: Number},
         Rates: {type: Number},

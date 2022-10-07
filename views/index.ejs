@@ -597,18 +597,20 @@
                     <p>Look at what our users are saying about the plarfom and their journey on how it helped them</p>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <% testimonials.forEach(testimonial => { %>
                     <div class="testimonial-item bg-light rounded p-1">
                         <div class="bg-white border rounded p-4">
-                            <p>Since i started using this service i dont have to worry about amaphara anymore lol.</p>
+                            <p><%= testimonial.text_input %> </p>
                             <div class="d-flex align-items-center">
                                 <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
                                 <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Sizwe</h6>
-                                    <small>Student</small>
+                                    <h6 class="fw-bold mb-1"><%= testimonial.name %> </h6>
+                                    <small><%= testimonial.occupation %> </small>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <% }); %> 
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
+const chatbox = require('./../models/chatbox')
 const add_property = require('./../models/add_property')
 router.use(express.static(path.join(__dirname, 'public')));
 

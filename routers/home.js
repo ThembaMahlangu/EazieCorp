@@ -40,7 +40,32 @@ router.get('/', function (req, res) {
 
   }
   ];
-    res.render('index.ejs', {properties: properties, listing: listing});
+
+  const testimonials = [{
+
+    name: 'Sweetness Mabena',
+    occupation: 'Medical Doctor',
+    text_input: 'It was safe using easy rentals. I mean, I even like the guy, Sakhile would you mind giving me his number?'
+
+  },
+  {
+
+    name: 'Thabo',
+    occupation: 'Machanic',
+    text_input: 'Eazie Rentals helped me out when i was fighting robbers and they took me to my apartment afterwards'
+
+  },
+  {
+
+    name: 'Solly bombe',
+    occupation: 'Hacker',
+    text_input: 'Hi, Youve been hacked'
+
+  }
+
+];
+
+    res.render('index.ejs', {properties: properties, listing: listing, testimonials: testimonials});
   });
 
  
