@@ -13,7 +13,7 @@ router.get('/', (req, res)=>{
 router.post('/', async function (req, res) {
     let new_chat = await chat.create({
 
-        chat_text: req.body.chat_text,
+        chat_text: req.body.chat_input,
     
       });
       
