@@ -302,13 +302,44 @@ router.get('/experience-level', function (req, res) {
     res.render('experience-level.ejs');
   });
 
+
+//----------------- Expenses ----------------------\\
+
+const expense = require('./../models/expenses')
 router.get('/expenses', function (req, res) {
-    res.render('expenses.ejs');
+  res.render('expenses.ejs');
+});
+router.post('/expenses', async function (req, res) {
+    let new_expense = await expense.create({
+
+      item_name : req.body.item_name,
+      purchase_from: req.body.purchase_from,
+      purchase_date : req.body.purchase_date,
+      purchased_by : req.body.purchased_by,
+      amount  : req.body.amount,
+      paid_by : req.body.paid_by,
+      status: req.body.status,
+      file_upload: req.body.attachments,
+    
+      });
+      
+      try{
+        res.render('expenses.ejs')
+       console.log(new_expense);
+    
+     }catch(e){
+      console.log(e)
+     };
   });
 
 router.get('/expense-reports', function (req, res) {
     res.render('expense-reports.ejs');
   });
+
+
+
+
+//----------------- Expenses End --------------------\\
 
 router.get('/events', function (req, res) {
     res.render('events.ejs');
