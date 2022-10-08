@@ -305,7 +305,8 @@ router.get('/experience-level', function (req, res) {
 
 //----------------- Expenses ----------------------\\
 
-const expense = require('./../models/expenses')
+
+
 router.get('/expenses', function (req, res) {
   res.render('expenses.ejs');
 });
@@ -480,4 +481,7 @@ router.get('/admin-dashboard', function (req, res) {
 router.get('/activities', function (req, res) {
     res.render('activities.ejs');
   });
+
+
+
 module.exports = router;
