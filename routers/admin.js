@@ -195,11 +195,6 @@ router.get('/payments', function (req, res) {
     res.render('payments.ejs');
   });
 
-
-router.get('/offer_approvals', function (req, res) {
-    res.render('offer_approvas.ejs');
-  });
-
 router.get('/notifications-settings', function (req, res) {
     res.render('notifications-settings.ejs');
   });
@@ -269,10 +264,6 @@ router.get('/forgot-password', function (req, res) {
     res.render('forgot-password.ejs');
   });
 
-router.get('/experience-level', function (req, res) {
-    res.render('experience-level.ejs');
-  });
-
 
 //----------------- Expenses ----------------------\\
 
@@ -328,22 +319,6 @@ router.get('/error-404', function (req, res) {
     res.render('error-404.ejs');
   });
 
-router.get('/edit-estimate', function (req, res) {
-    res.render('edit-estimate.ejs');
-  });
-
-router.get('/designations', function (req, res) {
-    res.render('designations.ejs');
-  });
-
-router.get('/departments', function (req, res) {
-    res.render('departments.ejs');
-  });
-
-
-router.get('/cron-setting', function (req, res) {
-    res.render('cron-setting.ejs');
-  });
 
 router.get('/create-invoice', function (req, res) {
     res.render('create-invoice.ejs');
@@ -393,13 +368,6 @@ router.get('/change-password', function (req, res) {
     res.render('change-password.ejs');
   });
 
-router.get('/categories', function (req, res) {
-    res.render('categories.ejs');
-  });
-
-router.get('/candidates', function (req, res) {
-    res.render('candidates.ejs');
-  });
 
 router.get('/budgets', function (req, res) {
     res.render('budgets.ejs');
@@ -409,30 +377,6 @@ router.get('/budget-revenues', function (req, res) {
     res.render('budget-revenues.ejs');
   });
 
-router.get('/budget-expenses', function (req, res) {
-    res.render('budget-expenses.ejs');
-  });
-
-
-router.get('/assets', function (req, res) {
-    res.render('assets.ejs');
-  });
-
-router.get('/archived-jobs', function (req, res) {
-    res.render('archived-jobs.ejs');
-  });
-
-router.get('/apptitude-result', function (req, res) {
-    res.render('apptitude-result.ejs');
-  });
-
-router.get('/approval-setting', function (req, res) {
-    res.render('approval-setting.ejs');
-  });
-
-router.get('/applied-jobs', function (req, res) {
-    res.render('applied-jobs.ejs');
-  });
 
 router.get('/admin-dashboard', function (req, res) {
     res.render('admin-dashboard.ejs');
