@@ -8,7 +8,7 @@
 .section{
 	width: 100%;
 	min-height: 100vh;
-	background-color: #ddd;
+	background-color: #4481eb;
 }
 .container{
 	width: 80%;
@@ -34,7 +34,7 @@
 }
 .content-section .content h3{
 	margin-top: 20px;
-	color:#5d5d5d;
+	color:#0c0b0b;
 	font-size: 21px;
 }
 .content-section .content p{
@@ -47,7 +47,7 @@
 	margin-top: 30px;
 }
 .content-section .content .button a{
-	background-color: #3d3d3d;
+	background-color: #141414;
 	padding:12px 40px;
 	text-decoration: none;
 	color:#fff;
@@ -67,7 +67,7 @@
 	padding:0px 10px;
 }
 .content-section .social i:hover{
-	color:#3d3d3d;
+	color:#0c0c0c;
 }
 @media screen and (max-width: 768px){
 	.container{
