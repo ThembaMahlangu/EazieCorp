@@ -26,6 +26,7 @@ app.use("/admin", require('./routers/admin'));
 app.use("/login", require('./routers/login'));
 app.use("/chat", require('./routers/chat'));
 app.use("/listing", require('./routers/listing'));
+app.use("/about", require('./routers/about'));
 
 // end routes
 
