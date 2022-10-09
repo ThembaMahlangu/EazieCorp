@@ -25,7 +25,7 @@ app.use("/", require('./routers/home'));
 app.use("/admin", require('./routers/admin'));
 app.use("/login", require('./routers/login'));
 app.use("/chat", require('./routers/chat'));
-app.use("/property-list-section", require('./routers/property-list-section'));
+app.use("/listing", require('./routers/listing'));
 
 // end routes
 
