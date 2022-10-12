@@ -11,6 +11,10 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
+    <!-- Pop Chat Styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-icons@1.12.0/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="css/style4.css">
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -585,8 +589,8 @@
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Newsletter</h5>
                         <p>Sign up for our Newsletter to stay up to date with safety trends in your area</p>
+                        <p>Registered Users Only</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                             <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                         </div>
                     </div>
@@ -615,9 +619,29 @@
         </div>
         <!-- Footer End -->
 
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <!-- PopChat -->
+        <section>    
+            <button class="chat-btn">
+                <i class="material-icons"> comment </i>
+            </button>
+    
+            <div class="chat-popup">
+                <div class="badge">1</div>
+                <div class="chat-area">
+                 <div class="income-msg">
+                    <img src="img/sakhile.jpeg" class="avatar" alt="">
+                    <span class="msg"> Hi, How can I help you?</span>
+                 </div>
+                </div>
+    
+                <div class="input-area">
+                    <input type="text">
+                    <button id="emoji-btn"> &#127773;</button>
+                    <button class="submit"> <i class="material-icons"> send</i></button>
+                </div>
+            </div>
+        </section>
+    
     </div>
 
     <!-- JavaScript Libraries -->
@@ -627,6 +651,8 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+    <script src="js/pop-chat.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

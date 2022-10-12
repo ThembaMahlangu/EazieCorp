@@ -137,12 +137,19 @@ input[type="text"] {
     align-items: center;
 }
 
+.out-msg .my-msg {
+    background-color: #969696;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
 .my-msg {
     display: flex;
     justify-content: flex-end;
     margin: 00.75rem;
-    border-radius: 25px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
     word-break: break-all;
 }
 
